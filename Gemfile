@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'rails-controller-testing'
 # Use Puma as the app server
 gem 'puma', '>= 3.11'
 # Use SCSS for stylesheets
@@ -59,9 +60,9 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
-  gem 'selenium-webdriver'
+ # gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  #gem 'chromedriver-helper'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
