@@ -5,4 +5,8 @@ module ApplicationHelper
 		gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
 		image_tag(gravatar_url, alt: user.username, class: "img-circle")
 	end
+
+	def sign_in_as(user, password)
+		post login_path, params:{ session: { email: user.email, password: password}}
+	end
 end
